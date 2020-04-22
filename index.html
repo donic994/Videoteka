@@ -1,0 +1,52 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>CloudSense videoteka</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <h1 style="text-align: center">CloudSense Videoteka</h1>
+    <br />
+    <div id="glavniProzor">
+        <input type="text" placeholder="Naziv filma" id="naziv" required/>
+        <input type="number" placeholder="Cijena filma" id="cijena" required min="0"/>
+
+        <select id="valuta" onchange="pretvoriValute()">
+            <option value="HRK">HRK</option>
+            <option value="EUR">EUR</option>
+        </select>
+
+        <div id="gumbici">                       
+            <input type="submit" id="dodaj" value="Dodaj film" onclick="dodajFilm()" />
+            <input type="submit" id="dodaj" value="Dodaj predefiniran film" onclick="dodajPredefiniraniFilm()" />
+        </div>
+
+        <hr />
+        <table id="tablica" style="width: 100%">
+            <tr>
+                <th>#</th>
+                <th>Naziv filma</th>
+                <th>Cijena(HRK)</th>
+                <th></th>
+            </tr>
+        </table>
+
+        <hr />
+        <div id="izracun" >
+            <label>Ukupno: </label>
+            <label id="ukupno">0.00 HRK</label><br />
+            <label style="color: #FF5B5B">Popust:</label>
+            <label id="popust" style="color: #FF5B5B">- 0.00 HRK</label>
+            <hr />
+            <label>Za platiti: </label>
+            <label id="zaPlatiti">0.00 HRK</label>
+        </div>
+    </div>
+    <label id="greske" style="color: #FF5B5B"></label>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

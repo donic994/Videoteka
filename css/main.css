@@ -1,0 +1,115 @@
+body{
+    font-family: "Helvetica";
+    font-size: 16px;
+    background-image:url("../img/pattern.jpg");
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+
+label{
+    display: inline-block;
+    text-align: right;
+    position:relative;
+    margin-left: 50px;
+
+}
+
+input[type=text],select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=number], select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: #03a9f4;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=range],select {
+    padding: 12px 20px;
+    margin: 8px 2px;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit]:hover {
+    background-color: #1cb5fd;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 100px;
+    border: 1px;
+}
+
+th, td {
+    text-align: center;
+    padding: 10px;
+}
+
+tr:nth-child(even){background-color: #e6f7ff}
+
+th {
+    background-color: #03a9f4;
+    color: white;
+    text-align: center;
+}
+th, a{
+    color:white;
+    text-decoration:none;
+}
+
+#brisi  {
+    background-color: #af4c4c;
+    color: white;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+}
+#gumbici{
+    clear:both;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+#izracun{
+    float:right;
+    clear:both;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+
+#tablica{
+    clear:both;
+    margin-top: 20px;
+}
+
+#glavniProzor{
+    text-align: center;
+    align-self: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
